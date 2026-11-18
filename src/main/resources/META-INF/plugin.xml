@@ -1,0 +1,20 @@
+<idea-plugin>
+    <id>io.github.rickhutten.inspectionkit</id>
+    <name>InspectionKit</name>
+    <vendor>Rick Hutten</vendor>
+    <description><![CDATA[
+        <p>InspectionKit adds focused inspections to help developers catch issues the IDE's existing checks may not cover.</p>
+    ]]></description>
+    <resource-bundle>messages.InspectionKitBundle</resource-bundle>
+    <depends>com.intellij.modules.platform</depends>
+    <idea-version since-build="252" until-build="252.*" />
+
+    <extensions defaultExtensionNs="com.intellij">
+        <applicationConfigurable
+                parentId="tools"
+                id="io.github.rickhutten.inspectionkit.settings"
+                instance="io.github.rickhutten.inspectionkit.settings.InspectionKitConfigurable"
+                key="settings.inspectionkit.display.name"
+                bundle="messages.InspectionKitBundle" />
+    </extensions>
+</idea-plugin>

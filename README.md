@@ -5,7 +5,7 @@ An IntelliJ plugin that adds focused inspections to help developers catch issues
 
 ## Development
 
-The project uses Kotlin, Gradle, and the IntelliJ Platform Gradle Plugin.
+The project uses Kotlin 2.2.21, Gradle 9.5.0, and the IntelliJ Platform Gradle Plugin 2.20.1 against IntelliJ IDEA 2025.2.6.1. Run Gradle with JDK 21 for the pinned target platform (on macOS: `export JAVA_HOME=$(/usr/libexec/java_home -v 21)`).
 
 ```sh
 ./gradlew runIde       # launch a sandbox IntelliJ IDEA instance
